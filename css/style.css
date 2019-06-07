@@ -1,0 +1,55 @@
+body {
+	background-color: #ECF0F1;
+	font-family: "Helvetica";
+}
+.navbar {
+	background-color: #ECF0F1;
+}
+.carousel-item {
+	background-color: #2C3E50;
+}
+.carousel-item img {
+	opacity: 0.6;
+}
+.carousel-caption {
+	width: 30rem;
+}
+.carousel-caption h4 {
+	width: 21rem;
+	background-color: #3498DB;
+	padding: 10px 0px 10px 0px;
+}
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #3498DB;
+}
+.carousel-item img {
+	height: 30rem;
+}
+.carousel-indicators {
+	position: initial;
+}
+.etiqueta {
+	position: absolute;
+	bottom: 20px;
+	left: 1rem;
+	z-index: 10;
+	min-width: 7rem;
+	color: white;
+	background-color: rgba(231, 76, 60, 0.8);
+}
+.card-title {
+	color: #2980B9;
+}
+.card-title-azul {
+	color: #3498DB;
+}
+.card-title-coral {
+	color: #E74C3C;
+}
+.voltarTopo {
+	color: white;
+	background-color: #3498DB;
+}
