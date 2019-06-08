@@ -1,0 +1,18 @@
+﻿### Material 
+
+* Desktop: https://invis.io/QKPWVS3P7A6
+* Tablet e monitores menores: https://invis.io/W3PWVSEEGKF
+* Mobile: https://invis.io/KUPWVSNC9NR
+* *OBS*: estas mesmas imagens ficam na pasta "layouts".
+
+### Atenção
+
+* Os recortes das imagens estão na pasta "slices".
+* Fonte "Helvetica".
+* Suporte de Browsers: IE9+, Chrome, Safari, Firefox.
+
+### Links úteis
+
+* Grid: http://getbootstrap.com/css/#grid
+* Paleta de cores usadas no layout: https://color.adobe.com/pt/teste-folha-web-color-theme-6584765/
+* Mussum Ipsum (gerador de lorem ipsum do Mussum): http://mussumipsum.com/
