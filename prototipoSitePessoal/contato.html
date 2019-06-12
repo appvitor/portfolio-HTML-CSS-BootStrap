@@ -1,0 +1,91 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Vitor P. Corrêa - Contato</title>
+    <style>
+      body {
+        background-color: #692ed1;
+        font-family:courier;
+        color: black;
+        text-align: center;
+      }
+      #cracha {
+        max-width: 28%;
+        margin-top: 2%;
+        margin-left: 32%;
+        background-color: white;
+        padding: 3%;
+        border-radius: 30px;
+        box-shadow: 0px 0px 7px black;
+      }
+      #espacoMenu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10%;
+      }
+      .links {
+        text-decoration: none;
+      }
+      .links:hover {
+        color: black;
+        font-weight: bold;
+      }
+      .titulo {
+        color: black;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+      #formulario {
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        font-weight: bold;
+        padding: none;
+      }
+      .inputsForm {
+        width: 100%;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+      }
+      #campoMensagem {
+        height: 30%;
+        resize: none;
+      }
+      #submitEnviar {
+        width: 27%;
+        font-weight: bold;
+        margin-top: 5%;
+        margin-left: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cracha">
+      <div id="espacoMenu">
+        <a class="links" href="index.html">HOME</a>
+        <img id="logo" src="imagens/logo.png">
+        <a class="links" href="sobre.html">SOBRE</a>  
+      </div>
+      <h3 class="titulo">Entre em contato com Vítor</h3>
+      <div id="formulario">
+        <form>
+          <div>
+            <label>Nome</label>
+            <input type="text" name="campoNome" class="inputsForm" autofocus="true">
+          </div>
+          <div>
+            <label>E-mail</label>
+            <input type="email" name="campoEmail" class="inputsForm">
+          </div>
+          <div>
+            <label>Mensagem</label>
+            <textarea class="inputsForm" id="campoMensagem"></textarea>
+          </div>
+          <input type="submit" name="submitEnviar" value="Enviar" class="inputsForm" id="submitEnviar"></submit>
+        </form>
+      </div>          
+    </div>
+  </body>
+</html>
