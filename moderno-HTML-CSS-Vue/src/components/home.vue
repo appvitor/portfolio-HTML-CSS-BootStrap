@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="whatWeDo flexCenter mt mb">
-            <div class="mainWidth">
-                <h2 class="mb">WHAT WE DO</h2>
+            <h2>WHAT WE DO</h2>
+            <div class="mainWidth contBorder">
                 <div class="mt mb">
                     <i class="fas fa-pen-nib fa-2x"></i>
                     <h3>DESIGN</h3>
@@ -49,28 +49,27 @@
             </div>
         </div>
         <div class="services colorWhite imagemBg flexCenter">
-            <div class="mainWidth">
-                <h2>SERVICES</h2>
-                <p class="mt">
+            <h2>SERVICES</h2>
+            <div class="mainWidth contBorder">
+                <p class="mt mb">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
         </div>
         <div class="contactUs flexCenter mt mb">
-            <div class="mainWidth">            
-                <h2>CONTACT US</h2>
+            <h2>CONTACT US</h2>
+            <div class="mainWidth contBorder">            
                 <p class="mt colorGrey">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.
                 </p>
-                <router-link to='contact' class="smMt smMb">CONTACT US</router-link>
+                <router-link to='contact' class="smMt mb">CONTACT US</router-link>
             </div>
         </div>
         <div class="tradeMark flexCenter">
@@ -102,7 +101,7 @@
         transform: rotate(135deg);
     }
     .services {
-        height: 70vh;
+        height: 75vh;
         background-image: url("../assets/bg2.jpg");
     }
     .tradeMark {

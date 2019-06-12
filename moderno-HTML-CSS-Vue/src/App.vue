@@ -20,7 +20,7 @@
 		color: #595252;
 	}
 	p {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 	.colorWhite {
 		color: white;
@@ -48,7 +48,7 @@
 	}
 	a {
 		display: inline-block;
-		width: 20rem;
+		width: 35vw;
 		height: 2rem;
 		padding-top: 0.5rem;
 		background-color: #393939;
@@ -68,6 +68,12 @@
 		flex-direction: column;
 	}
 	.mainWidth {
-		width: 40vw;
+		width: 50vw;
+	}
+	.contBorder {
+		border-style: solid;
+		border-width: 3px;
+		padding-right: 3rem;
+		padding-left: 3rem;
 	}
 </style>
