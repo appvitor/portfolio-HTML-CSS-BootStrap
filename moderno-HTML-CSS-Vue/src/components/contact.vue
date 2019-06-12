@@ -4,6 +4,11 @@
 		<button>
 			<router-link to='/'>Voltar a Home</router-link>
 		</button>
+		<fieldset>
+			<legend>
+				<h1>SERVICE</h1>
+			</legend>
+		</fieldset>
 	</div>
 </template>
 <script>
@@ -17,5 +22,5 @@
 	}
 </script>
 <style scoped>
- 
+
 </style>

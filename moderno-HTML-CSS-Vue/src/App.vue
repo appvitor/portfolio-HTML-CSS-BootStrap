@@ -70,10 +70,13 @@
 	.mainWidth {
 		width: 50vw;
 	}
-	.contBorder {
-		border-style: solid;
-		border-width: 3px;
+	fieldset {
+		border: 2px solid;
 		padding-right: 3rem;
 		padding-left: 3rem;
+ 	}
+	legend {
+ 		margin-left: auto;
+ 		margin-right: auto;
 	}
 </style>
