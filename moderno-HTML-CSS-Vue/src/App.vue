@@ -90,6 +90,7 @@
 		color: white;
 		text-shadow: 1px 1px #938b8b;
 		border-radius: 5px;
+		font-family: 'Maipo Sans SemiBold';
 	}
 	textarea {
 		resize: none;
