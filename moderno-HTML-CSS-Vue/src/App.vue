@@ -95,6 +95,17 @@
 		resize: none;
 		height: 5rem;
 	}
+	@media only screen and (max-width: 768px) {
+		input, textarea {
+			width: 90%;
+			margin-right: 5%;
+			margin-left: 5%; 
+		}
+	}
+	input[type=submit] {
+		padding-top: 0;
+		border-radius: 0;
+	}
 	.buttonLink {
 		display: inline-block;
 		width: 35vw;
@@ -104,9 +115,5 @@
 		color: #938b8b;
 		text-decoration: none;
 		text-shadow: none;
-	}
-	input[type=submit] {
-		padding-top: 0;
-		border-radius: 0;
 	}
 </style>
