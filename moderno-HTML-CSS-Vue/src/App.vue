@@ -15,12 +15,17 @@
 		font-family: 'Maipo Sans SemiBold';
 		src: url('assets/MaipoSansSemiBold.otf');
 	}
-	#app {
+	#app, html, body {
+		min-height: 100vh;
+		margin: 0;
 		font-family: 'Maipo Sans SemiBold';
 		color: #595252;
 	}
 	p {
 		font-size: 0.9em;
+	}
+	.textCenter {
+		text-align: center;	
 	}
 	.colorWhite {
 		color: white;
@@ -77,18 +82,20 @@
 	}
 	input, textarea {
 		display: block;
-		background-color: rgba(255, 255, 255, 0.3);
-		color: white;
 		border: none;
 		width: 100%;
 		height: 2rem;
 		font-size: 1em;
+		background-color: rgba(255, 255, 255, 0.3);
+		color: white;
+		text-shadow: 1px 1px #938b8b;
+		border-radius: 5px;
 	}
 	textarea {
 		resize: none;
 		height: 5rem;
 	}
-	a, input[type=submit] {
+	.buttonLink {
 		display: inline-block;
 		width: 35vw;
 		height: 2rem;
@@ -96,8 +103,10 @@
 		background-color: #393939;
 		color: #938b8b;
 		text-decoration: none;
+		text-shadow: none;
 	}
 	input[type=submit] {
 		padding-top: 0;
+		border-radius: 0;
 	}
 </style>

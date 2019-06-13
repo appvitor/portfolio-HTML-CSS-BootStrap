@@ -80,7 +80,7 @@
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                         consequat.
                     </p>
-                    <router-link to='contact' class="smMt mb">CONTACT US</router-link>
+                    <router-link to='contact' class="smMt mb buttonLink">CONTACT US</router-link>
                 </div>
             </fieldset>
         </div>
