@@ -46,26 +46,17 @@
 	.smMb {
 		margin-bottom: 1rem;
 	}
-	a {
-		display: inline-block;
-		width: 35vw;
-		height: 2rem;
-		padding-top: 0.5rem;
-		background-color: #393939;
-		color: #938b8b;
-		text-decoration: none;
+	.flexCenter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 	.imagemBg {
 		background-color: #A9BACE;
 		background-blend-mode: multiply;
 		background-size: 100% 100%;
         background-repeat: no-repeat;
-	}
-	.flexCenter {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
 	}
 	.mainWidth {
 		width: 50vw;
@@ -78,5 +69,35 @@
 	legend {
  		margin-left: auto;
  		margin-right: auto;
+	}
+	label {
+		display: block;
+		text-align: center;
+		margin-bottom: 0.7rem;
+	}
+	input, textarea {
+		display: block;
+		background-color: rgba(255, 255, 255, 0.3);
+		color: white;
+		border: none;
+		width: 100%;
+		height: 2rem;
+		font-size: 1em;
+	}
+	textarea {
+		resize: none;
+		height: 5rem;
+	}
+	a, input[type=submit] {
+		display: inline-block;
+		width: 35vw;
+		height: 2rem;
+		padding-top: 0.5rem;
+		background-color: #393939;
+		color: #938b8b;
+		text-decoration: none;
+	}
+	input[type=submit] {
+		padding-top: 0;
 	}
 </style>
