@@ -1,6 +1,6 @@
 <template>
 	<div class="contact imagemBg colorWhite">
-		<h1 class="textCenter">CONTACT US</h1>
+		<h1 class="textCenter" id="contactUs">CONTACT US</h1>
 		<div class="content">
 			<div class="smMt smMb">
 				<h2 class="textCenter">MEET US</h2>
@@ -74,6 +74,10 @@
 			flex-direction: column;
 			text-align: center;
 		}
+	}
+	#contactUs {
+		margin-top: 0;
+		padding-top: 3rem;
 	}
 	form div {
 		width: 100%;
