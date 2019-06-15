@@ -26,21 +26,21 @@ li {
 #mainLogo {
 	height: 20vh;
 	z-index: 1;
-	left: 7vw;
+	left: 9vw;
 }
 .navbar {
 	background-image: url("../img/bg1.png");
 	height: 75px;
 }
 .navbar img {
-	max-height: 10vh;
+	height: 10vh;
 }
 .nav-link {
 	line-height: 5px;
 	border-right: 2px solid #dda818;
 }
-#linkContato {
-	border: none;
+.navFones {
+	line-height: 20px;
 }
 a:hover {
 	color: #a81217;
@@ -67,6 +67,10 @@ a:hover {
 .parteAcoes a:hover {
 	background-color: white;
 }
+#acaoMeio {
+	border-left: 2px solid #f2b139;
+	border-right: 2px solid #f2b139;
+}
 .parteDepoimentos {
 	height: 267px;
 	background-image: url("../img/bg3.png");
@@ -87,6 +91,9 @@ a:hover {
 }
 .parteContato img {
 	max-height: 130px;
+}
+.contatoBorder {
+	border-right: 2px solid white;
 }
 .rodape {
 	height: 45px;

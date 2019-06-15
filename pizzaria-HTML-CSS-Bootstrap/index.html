@@ -28,20 +28,24 @@
 				<a class="nav-link colorWhite" href="">DEPOIMENTOS</a>
 			</li>
 			<li class="nav-item">
-				<a id="linkContato" class="nav-link colorWhite" href="">CONTATO</a>
+				<a class="nav-link colorWhite border-0" href="">CONTATO</a>
 			</li>
 		</ul>
-		<div class="d-flex align-items-center">
-			<img src="img/fone.png">
-			<div class="ml-2">
-				<p class="mb-0 mt-3 colorRed">DISK PIZZA</p>
+		<div class="d-flex align-items-center ml-5">
+			<img src="img/fone.png" class="pb-2">
+			<div class="ml-2 navFones">
+				<p class="mb-0 colorRed">DISK PIZZA</p>
 				<a href="4433544321" class="text-decoration-none colorWhite"><small>44</small> 3354 4321</a><br>
 				<a href="4433541009" class="text-decoration-none colorWhite"><small>44</small> 3354 1009</a>
 			</div>
 		</div>
 	</nav>
 	<!-- FIM HEADER-->
-	<img src="img/outdoor.png" class="img-fluid">
+	<!-- INICIO OUTDOOR-->
+	<div class="d-flex justify-content-between align-items-center">
+		<img src="img/outdoor.png" class="img-fluid">
+	</div>
+	<!-- FIM OUTDOOR-->
 	<!-- INICIO PARTE AÇÕES-->
 	<div class="container-fluid align-items-stretch parteAcoes colorYellow">
 		<div class="row align-items-center">
@@ -49,34 +53,34 @@
 				<div class="row align-items-center justify-content-center">				
 					<img src="img/fatiaE.png" class="imgFatias">
 					<img src="img/logo2.png" class="ml-4">
-					<span class="ml-4">
+					<div class="ml-4">
 						<h1>Faça</h1>
 						<h3>seu pedido</h3>
-						<h1 class="mb-1">online</h1>
+						<h1 class="mb-2">online</h1>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
-					</span>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="row align-items-center justify-content-center">				
+				<div id="acaoMeio" class="row align-items-center justify-content-center">				
 					<img src="img/menu.png">
-					<span class="ml-4">
+					<div class="ml-4">
 						<h1>Veja</h1>
 						<h2>nosso</h2>
-						<h3 class="mb-2">cardápio</h3>
+						<h3 class="mb-3">cardápio</h3>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
-					</span>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="row align-items-center justify-content-center">				
 					<img src="img/pizza.png">
-					<span class="ml-4 mr-4">
+					<div class="ml-4 mr-4">
 						<h3>Aproveite</h3>
 						<h1>nossas</h1>
-						<h3 class="mb-2">promoções</h3>
+						<h3 class="mb-3">promoções</h3>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
-					</span>
+					</div>
 					<img src="img/fatiaD.png" class="imgFatias">
 				</div>
 			</div>
@@ -99,13 +103,13 @@
 			<div class="col-md-6">
 				<div class="row align-items-center">
 					<img src="img/chat.png">
-					<span>
+					<div>
 						<h1>Veja os</h1>
 						<h3>depoimentos</h3>
 						<h2>dos nossos</h2>
 						<h1 class="mb-4">clientes</h1>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorWhite">Click Aqui</a>
-					</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -117,7 +121,7 @@
 			<div class="col-md-6">
 				<div class="row justify-content-center align-items-center">
 					<img src="img/logo3.png">
-					<span>
+					<div>
 						<ul class="mt-4">
 							<li>
 								<a href="" class="text-decoration-none colorWhite">HOME</a>
@@ -138,11 +142,11 @@
 								<a href="" class="text-decoration-none colorWhite">CONTATO</a>
 							</li>
 						</ul>
-					</span>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6 d-flex flex-column align-items-center">				
-				<span class="mt-3 text-right">
+				<div class="mt-3 text-right">
 					<a href="https://facebook.com" class="mr-3 text-decoration-none colorRed">
 						<i class="fab fa-facebook fa-2x  m"></i>
 					</a>
@@ -153,18 +157,26 @@
 						<i class="fab fa-youtube fa-2x"></i>
 					</a>
 					<h4 class="colorRed">DISK PIZZA</h4>
-					<p class="mb-0"><small>44</small> 3354 4321 ¦ <small>44</small> 3354 1009</p>
+					<div class="d-flex justify-content-end">
+						<p class="mb-0 pr-2 contatoBorder"><small>44</small> 3354 4321 </p>
+						<p class="mb-0 pl-2"> <small>44</small> 3354 1009 </p>
+					</div>
 					<p class="mb-0">Av. Jõao Paulino Vieira Filho, 333</p>
-					<p class="mb-0">Lj. 03 ¦ Zona 07 ¦ Maringá/PR</p>
+					<div class="d-flex justify-content-end">
+						<p class="mb-0 pr-2 contatoBorder">Lj. 03 </p>
+						<p class="mb-0 pr-2 pl-2 contatoBorder"> Zona 07 </p>	
+						<p class="mb-0 pr-2 pl-2 contatoBorder"> Maringá </p>
+						<p class="mb-0 pl-2"> PR </p>
+					</div>
 					<p class="mb-0">CEP 87020 015</p>
-				</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- FIM PARTE CONTATO -->
 	<!-- INICIO RODAPE -->
-	<div class="rodape text-center">
-		<p class="pt-2">Arnato's Pizzaria &copy 2019 - Todos os direitos reservados. Desenvolvido por Lettera Propaganda</p>
+	<div class="rodape d-flex justify-content-center align-items-center">
+		<p class="mb-0 mt-2">Arnato's Pizzaria &copy 2019 - Todos os direitos reservados. Desenvolvido por Lettera Propaganda</p>
 	</div>
 	<!-- FIM RODAPE -->
 
