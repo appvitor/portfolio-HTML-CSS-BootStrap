@@ -49,6 +49,7 @@ a:hover {
 	min-width: 100%;
 }
 .imgFatias {
+	z-index: 1;
 	max-height: 50px !important;
 }
 .row {
