@@ -1,0 +1,74 @@
+body {
+	font-family: ;
+	font-weight: bold;
+	color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+li {
+	list-style-type: none;
+}
+.colorRed {
+	color: #a81217;
+}
+.colorYellow {
+	color: #f2b139;
+}
+.colorWhite {
+	color: white;
+}
+.navbar {
+	background-image: url("../img/bg1.png");
+	height: 75px;
+}
+.navbar img {
+	max-height: 10vh;
+}
+a:hover {
+	color: #a81217;
+}
+.img-fluid {
+	min-width: 100%;
+}
+.imgFatias {
+	max-height: 50px !important;
+}
+.row {
+	height: 100%;
+}
+.parteAcoes {
+	height: 266px;
+	background-image: url("../img/bg2.png");
+}
+.parteAcoes img {
+	max-height: 140px;
+}
+.parteAcoes a {
+	background-color: #f2b139;
+}
+.parteAcoes a:hover {
+	background-color: white;
+}
+.parteDepoimentos {
+	height: 267px;
+	background-image: url("../img/bg3.png");
+}
+.parteDepoimentos a {
+	background-color: #f2b139;
+}
+.parteDepoimentos a:hover {
+	color: white;
+	background-color: #a81217;
+}
+.parteDepoimentos img {
+	max-height: 180px;
+}
+.parteContato {
+	height: 220px;
+	background-image:  url("../img/bg4.png");
+}
+.parteContato img {
+	max-height: 130px;
+}
