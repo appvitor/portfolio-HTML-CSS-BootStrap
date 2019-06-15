@@ -9,7 +9,8 @@
 </head>
 <body>
 	<!--INICIO HEADER-->
-	<nav class="navbar navbar-expand-md d-flex justify-content-around">
+	<img id="mainLogo" class="position-absolute" src="img/logo.png">
+	<nav class="navbar navbar-expand-md d-flex justify-content-center">
 		<ul class="navbar-nav d-none d-md-inline-flex">
 			<li class="nav-item">
 				<a class="nav-link colorRed" href="">HOME</a>
@@ -27,13 +28,13 @@
 				<a class="nav-link colorWhite" href="">DEPOIMENTOS</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link colorWhite" href="">CONTATO</a>
+				<a id="linkContato" class="nav-link colorWhite" href="">CONTATO</a>
 			</li>
 		</ul>
-		<div class="d-flex justify-content-between">
+		<div class="d-flex align-items-center">
 			<img src="img/fone.png">
 			<div class="ml-2">
-				<p class="mb-0 colorRed">DISK PIZZA</p>
+				<p class="mb-0 mt-3 colorRed">DISK PIZZA</p>
 				<a href="4433544321" class="text-decoration-none colorWhite"><small>44</small> 3354 4321</a><br>
 				<a href="4433541009" class="text-decoration-none colorWhite"><small>44</small> 3354 1009</a>
 			</div>
@@ -51,7 +52,7 @@
 					<span class="ml-4">
 						<h1>Faça</h1>
 						<h3>seu pedido</h3>
-						<h1>online</h1>
+						<h1 class="mb-1">online</h1>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
 					</span>
 				</div>
@@ -62,7 +63,7 @@
 					<span class="ml-4">
 						<h1>Veja</h1>
 						<h2>nosso</h2>
-						<h3>cardápio</h3>
+						<h3 class="mb-2">cardápio</h3>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
 					</span>
 				</div>
@@ -73,7 +74,7 @@
 					<span class="ml-4 mr-4">
 						<h3>Aproveite</h3>
 						<h1>nossas</h1>
-						<h3>promoções</h3>
+						<h3 class="mb-2">promoções</h3>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorRed">Click Aqui</a>
 					</span>
 					<img src="img/fatiaD.png" class="imgFatias">
@@ -87,10 +88,12 @@
 		<div class="row">
 			<div class="col-md-6">
 				<div class="row align-items-center">
-
-					<span>
-
-					</span>
+					<div class="fb-page"
+						data-href="https://www.facebook.com/imdb" 
+						data-width="340"
+						data-hide-cover="false"
+						data-show-facepile="true">	  	
+					</div>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -100,7 +103,7 @@
 						<h1>Veja os</h1>
 						<h3>depoimentos</h3>
 						<h2>dos nossos</h2>
-						<h1>clientes</h1>
+						<h1 class="mb-4">clientes</h1>
 						<a href="" class="text-decoration-none rounded-pill p-2 colorWhite">Click Aqui</a>
 					</span>
 				</div>
@@ -171,5 +174,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/ec1d6f7600.js"></script>
+	<script type="text/javascript">
+		js.src = "https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&amp;version=v2.5";
+	</script>
 </body>
 </html>

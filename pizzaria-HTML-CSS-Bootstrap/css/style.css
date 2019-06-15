@@ -1,14 +1,15 @@
+@font-face {
+	font-family: "Arista Pro Fat";
+	src: url("../font/AristaProFat.otf");
+}
 body {
-	font-family: ;
-	font-weight: bold;
+	font-family: "Arista Pro Fat", "Segoe UI Black";
+	font-size: 1.2em;
 	color: white;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	margin-bottom: 0;
-}
-small {
-	font-weight: bold;
 }
 li {
 	list-style-type: none;
@@ -22,12 +23,24 @@ li {
 .colorWhite {
 	color: white;
 }
+#mainLogo {
+	height: 20vh;
+	z-index: 1;
+	left: 7vw;
+}
 .navbar {
 	background-image: url("../img/bg1.png");
 	height: 75px;
 }
 .navbar img {
 	max-height: 10vh;
+}
+.nav-link {
+	line-height: 5px;
+	border-right: 2px solid #dda818;
+}
+#linkContato {
+	border: none;
 }
 a:hover {
 	color: #a81217;
@@ -66,7 +79,7 @@ a:hover {
 	background-color: #a81217;
 }
 .parteDepoimentos img {
-	max-height: 180px;
+	max-height: 160px;
 }
 .parteContato {
 	height: 220px;
@@ -78,5 +91,5 @@ a:hover {
 .rodape {
 	height: 45px;
 	background-image: url("../img/bg5.png");
-	font-weight: normal;
+	font-size: 0.8em;
 }
