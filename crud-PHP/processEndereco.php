@@ -25,12 +25,12 @@
 		$estado = $_POST['campoEstado'];
 		$cep = $_POST['campoCep'];
 	
-		$mysqli->query("INSERT INTO tb_enderecos (titulo, logradouro, numero, complemento, bairro, cidade, estado, cep) VALUES('$titulo', '$logradouro', '$numero', '$complemento', $bairro, $cidade, $estado, $cep)") 
+		$mysqli->query("INSERT INTO tb_enderecos (titulo, logradouro, numero, complemento, bairro, cidade, estado, cep) VALUES('$titulo', '$logradouro', '$numero', '$complemento', '$bairro', '$cidade', '$estado', '$cep')") 
 			or die($mysqli->error);
 
 		$_SESSION['message'] = "Endereço Salvo!";
 		$_SESSION['msg_type'] = "success";
-		header("location: index.php");
+		header("location: endereco.php");
 	}
 
 	if (isset($_GET['edit'])) {
@@ -42,7 +42,11 @@
 			$titulo = $endereco['titulo'];
 			$logradouro = $endereco['logradouro'];
 			$numero = $endereco['numero'];
-			$complemento = $endereco['titulo_complemento'];
+			$complemento = $endereco['complemento'];
+			$bairro = $endereco['bairro'];
+			$cidade = $endereco['cidade'];
+			$estado = $endereco['estado'];
+			$cep = $endereco['cep'];
 		}
 	}
 
@@ -52,20 +56,24 @@
 		$logradouro = $_POST['campoLogradouro'];
 		$numero = $_POST['campoNumero'];
 		$complemento = $_POST['campoComplemento'];
+		$bairro = $_POST['campoBairro'];
+		$cidade = $_POST['campoCidade'];
+		$estado = $_POST['campoEstado'];
+		$cep = $_POST['campoCep'];
 
-		$mysqli->query("UPDATE tb_enderecos SET titulo='$titulo', logradouro='$logradouro', numero='$numero', titulo_complemento='$complemento' WHERE id_endereco = $id") or die($mysqli->error);
+		$mysqli->query("UPDATE tb_enderecos SET titulo='$titulo', logradouro='$logradouro', numero='$numero', complemento='$complemento', bairro='$bairro', cidade='$cidade', estado='$estado', cep='$cep' WHERE id_endereco = $id") or die($mysqli->error);
 
-		$_SESSION['message'] = "endereco Atualizada!";
+		$_SESSION['message'] = "Endereço Atualizado!";
 		$_SESSION['msg_type'] = "warning";
-		header('location: index.php');
+		header("location: endereco.php");
 	}
 
 	if (isset($_GET['delete'])){
 		$id = $_GET['delete'];
 		$mysqli->query("DELETE FROM tb_enderecos WHERE id_endereco = $id") or die($mysqli->error());
 
-		$_SESSION['message'] = "endereco Deletada!";
+		$_SESSION['message'] = "Endereco Deletado!";
 		$_SESSION['msg_type'] = "danger";
-		header('location: index.php');
+		header("location: endereco.php");
 	}
 ?>

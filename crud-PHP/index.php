@@ -4,26 +4,7 @@
 	<meta charset="utf-8">
 	<title>CRUD - PHP</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<style type="text/css">
-		body {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			background-color: #7d3baf;
-			font-family: "Segoe UI Black";
-			color: white;
-		}
-		input[type=number] { 
-			-webkit-appearance: none; 
-		    -moz-appearance:textfield;
-		 	margin: 0; 
-		}	
-		input[type=number] {
-		}
-		th, td {
-			color: white;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<?php require_once 'processPessoa.php'; ?>
@@ -52,7 +33,7 @@
 				<a href="endereco.php" class="nav-link mr-4">ENDEREÇOS</a>
 			</li>
 			<li class="nav-item">
-				<a href="contatos.php" class="nav-link">CONTATOS</a>
+				<a href="contato.php" class="nav-link">CONTATOS</a>
 			</li>
 		</ul>
 	</nav>

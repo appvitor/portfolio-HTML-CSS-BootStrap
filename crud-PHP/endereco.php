@@ -33,7 +33,7 @@
 				<a href="index.php" class="nav-link mr-4">HOME</a>
 			</li>
 			<li class="nav-item">
-				<a href="contatos.php" class="nav-link">CONTATOS</a>
+				<a href="contato.php" class="nav-link">CONTATOS</a>
 			</li>
 		</ul>
 	</nav>
@@ -91,9 +91,9 @@
 							<td><?php echo $endereco['estado'] ?></td>
 							<td><?php echo $endereco['cep'] ?></td>
 							<td>
-								<a href="index.php?edit=<?php echo $endereco['id_Endereco']; ?>"
+								<a href="endereco.php?edit=<?php echo $endereco['id_endereco']; ?>"
 									class="btn btn-info">EDIT</a>
-								<a href="index.php?delete=<?php echo $endereco['id_Endereco']; ?>"
+								<a href="endereco.php?delete=<?php echo $endereco['id_endereco']; ?>"
 									class="btn btn-danger">DELETE</a>
 							</td>
 						</tr>
