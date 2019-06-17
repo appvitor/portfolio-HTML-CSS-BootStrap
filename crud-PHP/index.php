@@ -13,6 +13,9 @@
 			font-family: "Segoe UI Black";
 			color: white;
 		}
+		th, td {
+			color: white;
+		}
 	</style>
 </head>
 <body>
@@ -27,30 +30,43 @@
 			echo "</pre>";
 		}
 	?>
+	<?php if (isset($_SESSION['message'])): ?>
+		<div class="alert alert-<?=$_SESSION['msg_type']?>">
+			<?php
+				echo $_SESSION['message'];
+				unset($_SESSION['message']);
+			?>
+		</div>
+	<?php endif ?>
 	<h1>CRUD - PHP</h1>
 	<div class="container">
-		<div class="row d-flex justify-content-around align-items-center">
+		<div class="row d-flex justify-content-around align-items-center mt-3">
 			<form action="processPessoa.php" method="POST">
-				<div class="form-group">		
+				<div class="form-group">
+					<input type="hidden" name="campoId" value="<?php echo $id; ?>">
 					<label>Nome</label>
-					<input type="text" class="form-control" name="campoNome">
+					<input type="text" class="form-control" name="campoNome" value="<?php echo $nome; ?>">
 					<label>RG</label>
-					<input type="text" class="form-control" name="campoRg">
+					<input type="text" class="form-control" name="campoRg" value="<?php echo $rg; ?>">
 					<label>CPF</label>
-					<input type="text" class="form-control" name="campoCpf">
+					<input type="text" class="form-control" name="campoCpf" value="<?php echo $cpf; ?>">
 					<label>Nome da Mãe</label>
-					<input type="text" class="form-control" name="campoMae">
-					<button type="submit" class="btn btn-primary mt-4" name="save">SALVAR</button>
+					<input type="text" class="form-control" name="campoMae" value="<?php echo $mae; ?>">
+					<?php if ($edit == true) : ?>
+							<button type="submit" class="btn btn-info mt-4" name="update">ALTERAR</button>
+						<?php else: ?>
+							<button type="submit" class="btn btn-primary mt-4" name="save">CADASTRAR</button>
+					<?php endif; ?>
 				</div>
 			</form>
-			<div class="row justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center mt-3">
 				<table class="table">
 					<thead>
 						<tr>
-							<th>Nome</th>
+							<th>NOME</th>
 							<th>RG</th>
 							<th>CPF</th>
-							<th>Nome da Mãe</th>
+							<th>NOME DA MÃE</th>
 							<th colspan="2"></th>
 						</tr>
 					</thead>
@@ -61,13 +77,13 @@
 							<td><?php echo $pessoa['cpf'] ?></td>
 							<td><?php echo $pessoa['nome_mae'] ?></td>
 							<td>
-								<a href="index.php?edit=<?php echo $pessoa['id']; ?>"
+								<a href="index.php?edit=<?php echo $pessoa['id_pessoa']; ?>"
 									class="btn btn-info">EDIT</a>
-								<a href="index.php?delete=<?php echo $pessoa['id']; ?>"
+								<a href="index.php?delete=<?php echo $pessoa['id_pessoa']; ?>"
 									class="btn btn-danger">DELETE</a>
 							</td>
 						</tr>
-					<?php endwhile; ?>
+					<?php endwhile ?>
 				</table>
 			</div>
 		</div>
