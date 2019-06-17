@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>CRUD - PHP</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -11,12 +12,7 @@
 	<?php
 		$mysqli = new mysqli('localhost', 'root', '123456', 'dbphp') or die(mysqli_error($mysqli));
 		$tableEnderecos = $mysqli->query("SELECT * FROM tb_enderecos") or die($mysqli->error);
-
-		function pre_r($tabela) {
-			echo '<pre>';
-			print_r($tabela);
-			echo "</pre>";
-		}
+		$tablePessoas = $mysqli->query("SELECT id_pessoa, nome FROM tb_pessoas") or die($mysqli->error);
 	?>
 	<?php if (isset($_SESSION['message'])): ?>
 		<div class="alert alert-<?=$_SESSION['msg_type']?>">
@@ -41,7 +37,13 @@
 		<div class="row d-flex justify-content-around align-items-center mt-3">
 			<form action="processEndereco.php" method="POST">
 				<div class="form-group">
-					<input type="hidden" name="campoId" value="<?php echo $id; ?>">
+					<label>Pessoa</label>
+					<select class="form-control">
+						<?php while($pessoa  = $tablePessoas->fetch_assoc()): ?>
+							<option name="campoIdPessoa" value="<?php echo $pessoa['$id_pessoa']; ?>"><?php echo $pessoa['nome'] ?></option>
+						<?php endwhile; ?>
+					</select>
+					<input type="hidden" name="campoId" value="<?php echo $idEndereco; ?>">
 					<label>Titulo</label>
 					<input type="text" class="form-control" name="campoTitulo" value="<?php echo $titulo; ?>">
 					<label>Logradouro</label>
@@ -69,6 +71,7 @@
 				<table class="table">
 					<thead>
 						<tr>
+							<th>PESSOA</th>
 							<th>TITULO</th>
 							<th>LOGRADOURO</th>
 							<th>NUMERO</th>
@@ -82,6 +85,7 @@
 					</thead>
 					<?php while ($endereco = $tableEnderecos->fetch_assoc()): ?> 
 						<tr>
+							<td><?php echo $endereco['pessoa_id'] ?></td>
 							<td><?php echo $endereco['titulo'] ?></td>
 							<td><?php echo $endereco['logradouro'] ?></td>
 							<td><?php echo $endereco['numero'] ?></td>
@@ -97,7 +101,7 @@
 									class="btn btn-danger">DELETE</a>
 							</td>
 						</tr>
-					<?php endwhile ?>
+					<?php endwhile; ?>
 				</table>
 			</div>
 		</div>
