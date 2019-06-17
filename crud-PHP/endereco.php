@@ -40,7 +40,7 @@
 					<label>Pessoa</label>
 					<select class="form-control">
 						<?php while($pessoa  = $tablePessoas->fetch_assoc()): ?>
-							<option name="campoIdPessoa" value="<?php echo $pessoa['$id_pessoa']; ?>"><?php echo $pessoa['nome'] ?></option>
+							<option name="campoIdPessoa" value="<?php echo $pessoa['id_pessoa']; ?>"><?php echo $pessoa['nome'] ?></option>
 						<?php endwhile; ?>
 					</select>
 					<input type="hidden" name="campoId" value="<?php echo $idEndereco; ?>">
