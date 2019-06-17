@@ -13,13 +13,6 @@
 			font-family: "Segoe UI Black";
 			color: white;
 		}
-		input[type=number] { 
-			-webkit-appearance: none; 
-		    -moz-appearance:textfield;
-		 	margin: 0; 
-		}	
-		input[type=number] {
-		}
 		th, td {
 			color: white;
 		}
@@ -46,16 +39,6 @@
 		</div>
 	<?php endif ?>
 	<h1>CRUD - PHP</h1>
-	<nav class="navbar navbar-light">
-		<ul class="navbar-nav flex-row">
-			<li class="nav-item">
-				<a href="endereco.php" class="nav-link mr-4">ENDEREÇOS</a>
-			</li>
-			<li class="nav-item">
-				<a href="contatos.php" class="nav-link">CONTATOS</a>
-			</li>
-		</ul>
-	</nav>
 	<div class="container">
 		<div class="row d-flex justify-content-around align-items-center mt-3">
 			<form action="processPessoa.php" method="POST">
@@ -66,7 +49,7 @@
 					<label>RG</label>
 					<input type="text" class="form-control" name="campoRg" value="<?php echo $rg; ?>">
 					<label>CPF</label>
-					<input type="number" class="form-control" name="campoCpf" value="<?php echo $cpf; ?>">
+					<input type="text" class="form-control" name="campoCpf" value="<?php echo $cpf; ?>">
 					<label>Nome da Mãe</label>
 					<input type="text" class="form-control" name="campoMae" value="<?php echo $mae; ?>">
 					<?php if ($edit == true) : ?>

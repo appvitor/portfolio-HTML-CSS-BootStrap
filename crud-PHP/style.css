@@ -1,0 +1,16 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #7d3baf;
+	font-family: "Segoe UI Black";
+	color: white;
+}
+input[type=number] { 
+	-webkit-appearance: none; 
+	-moz-appearance:textfield;
+ 	margin: 0;
+}
+th, td {
+	color: white;
+}
