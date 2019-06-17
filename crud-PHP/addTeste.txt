@@ -1,33 +1,11 @@
-1 - Posicionar layout.psd, dando preferencia para as boas práticas, mantêr aspecto o máximo possível próximo do original, e usar o mínimo possível de imagens, utilizando como diferencial técnicas de HTML 5 e CSS 3.
+1 - CRUD (Cadastro, Leitura, Alteração e Exclusão) básico de pessoa (Nome,RG, CPF e Nome da mãe).
 
-2 - Desenvolver um CRUD (Cadastro, Leitura, Alteração e Exclusão) básico de pessoa (Nome,RG, CPF e Nome da mãe).
-
-3 - Desenvolver um CRUD de endereço, que pertença a uma pessoa já cadastrada no exercício 2, abrindo assim a possibilidade de que cada pessoa possua mais de um endereço
+2 - CRUD de endereço, que pertença a uma pessoa já cadastrada no exercício 2, abrindo assim a possibilidade de que cada pessoa possua mais de um endereço
 estes endereços devem contêr os seguintes campos (Título, Logradouro, Número, Complemento, Bairro, Cidade, Estado e CEP).
 
-3 - Desenvolver um CRUD de contato, que pertença a uma pessoa já cadastrada no exercício 2, abrindo assim a possibilidade de que cada pessoa possua mais de um contato, estes contatos poderão ser de 2 tipos, Telefone ou E-mail, para Telefone existe a possibilidade de preenchimento de (Nome Contato, Telefone, Operadora) e para o E-mail (Nome, email).
-
-Orientações:
+3 - CRUD de contato, que pertença a uma pessoa já cadastrada no exercício 2, abrindo assim a possibilidade de que cada pessoa possua mais de um contato, estes contatos poderão ser de 2 tipos, Telefone ou E-mail, para Telefone existe a possibilidade de preenchimento de (Nome Contato, Telefone, Operadora) e para o E-mail (Nome, email).
 
 Os dados de conexão do banco de dados são:
 host: localhost
 user: root
 pass: 123456
-
-a pasta em que deve ser criada uma pasta para realização das
-atividades é
-D:\httpc
-esta pasta deve ter o seguinte formato seu_nome_sobrenome
-e para acessa-la no navegador http://localhost/seu_nome_sobrenome
-
-
-Photoshop
-Caso não tenha conhecimento sobre como utilizar a ferramenta para fatiar o layout, peça orientação.
-
-
-Contato para Dúvidas:
-
-44988384117 - Caio Seixas p/ horário comercial
-44998813275 - Caio Seixas fora do horário comercial
-cacs0x@gmail.com
-Skype - desenvolvimento2@byteabyte.com.br
