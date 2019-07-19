@@ -1,102 +1,55 @@
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Vitor P. Corrêa - Sobre</title>
-    <style>
-      body {
-        background-color: #692ed1;
-        font-family:courier;
-        color: black;
-        text-align: center;
-      }
-      #cracha {
-        max-width: 28%;
-        margin-top: 2%;
-        margin-left: 32%;
-        background-color: white;
-        padding: 3%;
-        border-radius: 30px;
-        box-shadow: 0px 0px 7px black;
-      }
-      #espacoMenu {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 7%;
-      }
-      #logo {
-        margin-left: 8%;
-      }
-      .links {
-        text-decoration: none;
-      }
-      .links:hover {
-        color: black;
-        font-weight: bold;
-      }
-      .titulo {
-        color: black;
-        margin-bottom: 2%;
-      }
-      #experiencias {
-        font-size: 1vw;
-        margin-top: 5%;
-        margin-bottom: 0;
-        text-align: justify;
-      }
-      .imgsExperiencias {
-        display: inline-block;
-        max-width: 30%;
-      }
-      #logoUnicesumar {
-        float: left;
-      }
-      #logoIsisBruder {
-        float: right;
-      }
-      #expIsisBruder {
-        margin-top: 7%;
-        text-align: left;
-      }
-      #expDiversao {
-        margin-top: 7%;
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="cracha">
-      <div id="espacoMenu">
-        <a class="links" href="index.html">HOME</a>
-        <img id="logo" src="imagens/logo.png">
-        <a class="links" href="contato.html">CONTATO</a>  
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>Vítor P. Corrêa - Sobre</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <div class="container d-flex justify-content-center">      
+         <div class="card mt-4 cardWidth shadow">
+            <div class="card-body">
+               <div class="d-flex justify-content-between justify-content-sm-around">
+                  <a class="card-link" href="index.html"><i class="fas fa-home"></i><br>HOME</a>
+                  <a class="card-link" href="contato.html"><i class="fas fa-envelope"></i><br>CONTATO</a>  
+               </div>
+               <h2 class="mt-2 mb-4 card-title">Sobre o Vítor</h2>
+               <div class="text-justify">
+                  <div class="mb-5 d-flex justify-content-between align-items-center flex-column flex-sm-row text-sm-right">
+                     <div>
+                        <img src="imagens/unicesumar.png" class="imgWidth flex-grow-1">
+                     </div>
+                     <p class="card-text mt-3">
+                        Graduado em Análise e Desenvolvimento de Sistemas pela UniCesumar no período 2015 - 2017. 
+                        Recebeu 3 vezes o certificado de média 8 ou acima, e uma vez o de melhor aluno da classe.
+                     </p>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row text-sm-left">
+                     <p class="card-text order-1 order-sm-0  mt-3">
+                        Em 2016 realizou trabalho voluntário pela Fundação Ísis Bruder, como professor de informática no projeto Digitando o Futuro. 
+                     </p>
+                     <div class="order-0 order-sm-1">
+                        <img src="imagens/isisBruder.png" class="imgWidth">
+                     </div>
+                  </div>
+                  <div class="mt-5">
+                     <div class="mb-3 d-flex justify-content-around">
+                        <img src="imagens/html.png" class="imgLogo">
+                        <img src="imagens/bootstrap2.png" class="imgLogo">
+                        <img src="imagens/css.png" class="imgLogo">
+                     </div>
+                     <p class="card-text text-sm-center">
+                        As tecnologias que possui maior domínio são HTML5, CSS3 e BootStrap4.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <h3 class="titulo">Sobre o Vítor</h3>
-      <div id="experiencias">
-        <div id="expUnicesumar">
-          <img src="imagens/unicesumar.png" hspace="20" class="imgsExperiencias" id="logoUnicesumar">
-          <p>
-            Graduação em Análise e Desenvolvimento de Sistemas pela UniCesumar no período 2015 - 2017. 
-            <br>
-            Recebeu 3 vezes o certificado de média 8 ou acima, e uma vez o certificado de melhor aluno da sala. 
-          </p>
-        </div>
-        <div id="expIsisBruder">
-          <img src="imagens/isisBruder.png" hspace="10" class="imgsExperiencias" id="logoIsisBruder">
-          <p>
-            Durante 2016 realizou trabalho voluntário pela Fundação Ísis Bruder, como professor de informática no projeto Digitando o Futuro. 
-          </p>
-        </div>
-        <div id="expDiversao">
-          <img src="imagens/sushi.png" class="imgsExperiencias">
-          <img src="imagens/miojo.png" class="imgsExperiencias imgsDiversao">
-          <img src="imagens/filmes.png" class="imgsExperiencias imgsDiversao">
-        </div>
-        <p>
-          Nas horas vagas ele adora comer sushi, miojo e assitir filmes. Estas coisas deixam ele muito feliz :)
-        </p>
-      </div>
-    </div>
-  </body>
+   </body>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/ec1d6f7600.js"></script>
 </html>

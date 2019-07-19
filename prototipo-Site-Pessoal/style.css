@@ -1,0 +1,21 @@
+body {
+   height: 100vh;
+   background-color: #692ed1;
+   text-align: center;
+}
+.cardWidth {
+   max-width: 37rem;
+}
+.roundCorner {
+   border-radius: 15px;
+}
+.imgWidth {
+   max-width: 130px;
+}
+.imgLogo {
+   max-width: 90px;
+}
+
+textarea {
+   resize: none;
+}
