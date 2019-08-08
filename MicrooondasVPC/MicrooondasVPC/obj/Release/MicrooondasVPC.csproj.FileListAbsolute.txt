@@ -1,6 +1,0 @@
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Release/MicrooondasVPC.exe.config
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Release/MicrooondasVPC.exe
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Release/MicrooondasVPC.pdb
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Release/MicrooondasVPC.csproj.CoreCompileInputs.cache
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Release/MicrooondasVPC.exe
-/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Release/MicrooondasVPC.pdb
