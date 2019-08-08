@@ -1,0 +1,14 @@
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.csprojAssemblyReference.cache
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.csproj.CoreCompileInputs.cache
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.exe.config
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.exe
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.pdb
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.exe
+C:/Users/Vitor/Desktop/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.pdb
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.exe.config
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.exe
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/bin/Debug/MicrooondasVPC.pdb
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.csprojAssemblyReference.cache
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.csproj.CoreCompileInputs.cache
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.exe
+/Users/Vitor/Projects/portfolio/MicrooondasVPC/MicrooondasVPC/obj/Debug/MicrooondasVPC.pdb
