@@ -12,14 +12,22 @@ namespace MicrooondasVPC
         {
             int tempoAquecimento;
             string opcaoMenu;
+            object[] listaOpcoesAlimentos = {
+                ["Pipoca", "70", "4"],
+                ["Pizza", "100", "6"],
+                ["Lasanha", "105", "8"],
+                ["Brigadeiro", "90", "9"],
+                ["Descongelar", "120", "10"]
+            };
 
             do
             {
                 Console.Clear();
                 Console.WriteLine("Microondas VPC");
                 Console.WriteLine("Menu: ");
+                Console.WriteLine("1 a 120 - Segundos Para Aquecer");
                 Console.WriteLine("R - Aquecimento Rápido");
-                Console.WriteLine("1 a 120 - Segundos de Aquecimento");
+                Console.WriteLine("O - Opções Alimentos");
                 Console.WriteLine("E - Encerrar");
                 Console.WriteLine("Digite a Opção Desejada: ");
                 opcaoMenu = Console.ReadLine();
@@ -34,6 +42,25 @@ namespace MicrooondasVPC
                 {
                     Program.aquecer(tempoAquecimento, 0);
                        
+                }
+                else if (Equals(opcaoMenu, "O"))
+                {
+                    string opcaoAlimento;
+                    do
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Opções de Alimentos");
+                        Program.desenharLinha();
+                        foreach (object itemAlimento in listaOpcoesAlimentos)
+                        {
+                            Console.WriteLine(itemAlimento);
+                        }
+                        Program.desenharLinha();
+                        Console.WriteLine("Digite o Alimento Desejado: ");
+                        opcaoAlimento = Console.ReadLine();
+                        //Program.aquecer();
+
+                    } while (opcaoAlimento != "E");
                 }
                 else if (Equals(opcaoMenu, "E"))
                 {
@@ -64,7 +91,7 @@ namespace MicrooondasVPC
                     {
                         Console.Clear();
                         Console.WriteLine("Aquecer " + tempoAquecimento + " Segundos");
-                        Console.WriteLine("--------------------------------------------------------");
+                        Program.desenharLinha();
                         Console.WriteLine("Digite a potencia de aquecimento (" + valorMinimoDePotencia + " - " + valorMaximoDePotencia + "): ");
                         valorPotencia = Convert.ToInt32(Console.ReadLine());
 
@@ -72,7 +99,7 @@ namespace MicrooondasVPC
                 }
 
                 Console.Clear();
-                Console.WriteLine("--------------------------------------------------------");
+                Program.desenharLinha();
                 Console.WriteLine("Aquecendo " + tempoAquecimento + " segundos na potência " + valorPotencia + "!");
                 Console.ReadLine();
             }
@@ -87,6 +114,10 @@ namespace MicrooondasVPC
             Console.Clear();
             Console.WriteLine(frase);
             Console.ReadLine();
+        }
+        public static void desenharLinha()
+        {
+            Console.WriteLine("--------------------------------------------------------");
         }
     }
 }
