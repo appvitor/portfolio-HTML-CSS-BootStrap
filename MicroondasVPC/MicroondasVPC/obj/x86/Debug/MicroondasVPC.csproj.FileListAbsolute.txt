@@ -1,6 +1,0 @@
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/bin/Debug/MicroondasVPC.exe
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/bin/Debug/MicroondasVPC.pdb
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/obj/x86/Debug/MicroondasVPC.csprojAssemblyReference.cache
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/obj/x86/Debug/MicroondasVPC.csproj.CoreCompileInputs.cache
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/obj/x86/Debug/MicroondasVPC.exe
-/Users/Vitor/Projects/portfolio/MicroondasVPC/MicroondasVPC/obj/x86/Debug/MicroondasVPC.pdb
