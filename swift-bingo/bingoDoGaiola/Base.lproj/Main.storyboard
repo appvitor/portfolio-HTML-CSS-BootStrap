@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BingoFan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egO-D7-HAx">
+                                <rect key="frame" x="26" y="292" width="323" height="94"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="AfP-c2-rVx"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="B4g-ev-8GO"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="30"/>
+                                <color key="textColor" red="0.79215686269999996" green="0.0078431372550000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG3-wi-FmS">
+                                <rect key="frame" x="246" y="616" width="103" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="j6Q-5o-ptn"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="PAI-8V-YgL"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <state key="normal" title="Sorteados">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bingoLogo" translatesAutoresizingMaskIntoConstraints="NO" id="768-1J-PXu">
+                                <rect key="frame" x="75" y="20" width="224" height="115"/>
+                                <viewLayoutGuide key="safeArea" id="pvH-1P-4zD"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolaBingo" translatesAutoresizingMaskIntoConstraints="NO" id="Y6t-Fg-Xee">
+                                <rect key="frame" x="102" y="128" width="171" height="156"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9z-BS-LuE">
+                                <rect key="frame" x="16" y="178" width="343" height="86"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="o1n-CJ-Kuj"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="dUw-6q-2Pk"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="65"/>
+                                <color key="textColor" red="0.79215686269999996" green="0.0078431372550000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpH-ev-yeg">
+                                <rect key="frame" x="102" y="128" width="171" height="69"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="mCA-Sf-4dD"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="AOS-Fw-aHs"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBK-iN-pIC">
+                                <rect key="frame" x="26" y="616" width="103" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="77V-fT-zaw"/>
+                                    <constraint firstAttribute="height" constant="31" id="S4u-H5-KsS"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="mGW-n5-fJg"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                                <state key="normal" title="Recomeçar">
+                                    <color key="titleColor" red="0.79215686269999996" green="0.0078431372550000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="botaoRecomecar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7sP-7O-Aia"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONk-k5-lU5">
+                                <rect key="frame" x="75" y="393" width="225" height="228"/>
+                                <viewLayoutGuide key="safeArea" id="CqS-h3-c6n"/>
+                                <state key="normal" image="botaoGerar"/>
+                                <state key="selected" image="botaoGerarAtivo"/>
+                                <state key="highlighted" image="botaoGerarAtivo.png"/>
+                                <connections>
+                                    <action selector="botaoGerarNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zxa-3T-AHv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72156862745098038" green="0.81568627450980391" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="768-1J-PXu" firstAttribute="leading" secondItem="0dN-zX-H10" secondAttribute="leading" constant="75" id="1kp-v2-jJa"/>
+                            <constraint firstAttribute="bottom" secondItem="DBK-iN-pIC" secondAttribute="bottom" constant="20" symbolic="YES" id="4Lj-Ta-sI4"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="trailing" secondItem="RG3-wi-FmS" secondAttribute="trailing" id="7lL-C7-72w"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="centerX" secondItem="ONk-k5-lU5" secondAttribute="centerX" id="Ckw-LV-eSK"/>
+                            <constraint firstItem="DBK-iN-pIC" firstAttribute="top" secondItem="RG3-wi-FmS" secondAttribute="top" id="FF7-14-ILo"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="top" secondItem="Y6t-Fg-Xee" secondAttribute="bottom" constant="8" symbolic="YES" id="GyT-er-yXc"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="leading" secondItem="DBK-iN-pIC" secondAttribute="leading" id="KrF-7u-MKO"/>
+                            <constraint firstItem="i9z-BS-LuE" firstAttribute="centerX" secondItem="egO-D7-HAx" secondAttribute="centerX" id="NBt-fr-Utn"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="leading" secondItem="0dN-zX-H10" secondAttribute="leading" constant="26" id="NFD-it-drO"/>
+                            <constraint firstItem="DBK-iN-pIC" firstAttribute="baseline" secondItem="RG3-wi-FmS" secondAttribute="firstBaseline" id="Pab-L2-XwT"/>
+                            <constraint firstItem="ONk-k5-lU5" firstAttribute="top" secondItem="egO-D7-HAx" secondAttribute="bottom" constant="7" id="SKn-Sf-L0w"/>
+                            <constraint firstItem="i9z-BS-LuE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ud8-g0-otS"/>
+                            <constraint firstItem="768-1J-PXu" firstAttribute="top" secondItem="0dN-zX-H10" secondAttribute="top" id="Z73-CX-eLK"/>
+                            <constraint firstItem="0dN-zX-H10" firstAttribute="bottom" secondItem="ONk-k5-lU5" secondAttribute="bottom" constant="46" id="ZhN-X3-nMh"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="top" secondItem="i9z-BS-LuE" secondAttribute="bottom" constant="28" id="bG6-YB-bGq"/>
+                            <constraint firstItem="768-1J-PXu" firstAttribute="centerX" secondItem="UpH-ev-yeg" secondAttribute="centerX" id="d4G-7h-mfg"/>
+                            <constraint firstItem="i9z-BS-LuE" firstAttribute="top" secondItem="768-1J-PXu" secondAttribute="bottom" constant="43" id="iMg-mm-9cH"/>
+                            <constraint firstItem="UpH-ev-yeg" firstAttribute="top" secondItem="0dN-zX-H10" secondAttribute="top" constant="108" id="mYv-FT-j5z"/>
+                            <constraint firstItem="UpH-ev-yeg" firstAttribute="centerX" secondItem="i9z-BS-LuE" secondAttribute="centerX" id="mnO-qh-Hcy"/>
+                            <constraint firstItem="i9z-BS-LuE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oxu-SU-H9k"/>
+                            <constraint firstItem="egO-D7-HAx" firstAttribute="top" secondItem="UpH-ev-yeg" secondAttribute="bottom" constant="95" id="pZM-Ke-8eq"/>
+                            <constraint firstItem="UpH-ev-yeg" firstAttribute="leading" secondItem="Y6t-Fg-Xee" secondAttribute="leading" id="sSV-la-hnt"/>
+                            <constraint firstItem="RG3-wi-FmS" firstAttribute="baseline" secondItem="DBK-iN-pIC" secondAttribute="firstBaseline" id="upE-s5-UPw"/>
+                            <constraint firstItem="768-1J-PXu" firstAttribute="leading" secondItem="ONk-k5-lU5" secondAttribute="leading" id="xrI-pB-4nB"/>
+                            <constraint firstItem="UpH-ev-yeg" firstAttribute="trailing" secondItem="Y6t-Fg-Xee" secondAttribute="trailing" id="xsg-W4-iV5"/>
+                            <constraint firstItem="UpH-ev-yeg" firstAttribute="leading" secondItem="0dN-zX-H10" secondAttribute="leading" constant="102" id="y1L-6r-pyY"/>
+                            <constraint firstItem="Y6t-Fg-Xee" firstAttribute="top" secondItem="UpH-ev-yeg" secondAttribute="top" id="zYb-B3-1AQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0dN-zX-H10"/>
+                    </view>
+                    <connections>
+                        <outlet property="bolaBingo" destination="Y6t-Fg-Xee" id="TPr-kU-seY"/>
+                        <outlet property="labelFraseEfeito" destination="egO-D7-HAx" id="EHY-0k-Dh9"/>
+                        <outlet property="labelLetraNumeroSorteado" destination="UpH-ev-yeg" id="Tdu-gU-IPF"/>
+                        <outlet property="labelNumeroSorteado" destination="i9z-BS-LuE" id="Q3u-jq-7wx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58.399999999999999" y="114.69265367316342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bingoLogo" width="391" height="157"/>
+        <image name="bolaBingo" width="457" height="448"/>
+        <image name="botaoGerar" width="261" height="261"/>
+        <image name="botaoGerarAtivo" width="261" height="261"/>
+        <image name="botaoGerarAtivo.png" width="261" height="261"/>
+    </resources>
+    <color key="tintColor" red="0.79215686269999996" green="0.0078431372550000003" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
