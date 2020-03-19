@@ -104,7 +104,7 @@ class ViewController: UIViewController {
                 print(numeroTemp)
                 numerosSorteados.forEach { numeroDoArray in
                     if numeroTemp == numeroDoArray {
-                        numeroJaSorteado = true
+                        return numeroJaSorteado = true
                     }
                 }
                 
