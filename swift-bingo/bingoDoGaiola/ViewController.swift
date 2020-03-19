@@ -80,6 +80,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelLetraNumeroSorteado: UILabel!
     @IBOutlet weak var labelNumeroSorteado: UILabel!
     @IBOutlet weak var labelFraseEfeito: UILabel!
+    @IBOutlet weak var telaSorteados: UICollectionView!
     
     @IBAction func botaoRecomecar(_ sender: Any) {
         
@@ -145,7 +146,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func botaoSorteados(_ sender: Any) {
-        
+        telaSorteados.layer.zPosition = 2
+        telaSorteados.isHidden = false
+        print("função chamada!")
     }
+    
     
 }
