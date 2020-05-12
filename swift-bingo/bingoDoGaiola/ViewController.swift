@@ -150,6 +150,4 @@ class ViewController: UIViewController {
         telaSorteados.isHidden = false
         print("função chamada!")
     }
-    
-    
 }
